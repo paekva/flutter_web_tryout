@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web/screens/login_screen.dart';
 
 import '../widgets/home_screen_categories.dart';
 
@@ -22,7 +23,9 @@ class _HomeScreenState extends State<HomeScreen> {
           Padding(
             padding: EdgeInsets.only(right: 200),
             child: FlatButton (
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => LoginScreen()));
+              },
               child: Text('Login', style: TextStyle(color: Colors.white)),
             ),
           ),
